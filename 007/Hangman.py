@@ -36,7 +36,7 @@ def play_game():
                 user_guess = (input(f"\nGuess the letter!: ")).lower()
 
                 if user_guess in user_already_guess:
-                    print(f"You have guessed '{user_guess}' try again!")
+                    print(f"You have guessed '{user_guess}' try again!"f)
                 else:
                     user_already_guess += user_guess
                     if user_guess in word:
