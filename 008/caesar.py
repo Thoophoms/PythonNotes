@@ -19,7 +19,7 @@ print(logo)
 
 
 def ceasar(original_text, shift_amount, direction):
-    encrypted_text = ""
+    ceasar_text = ""
     for each_letter in original_text:
         if each_letter in alphabet:
             original_index = alphabet.index(each_letter)
@@ -27,10 +27,10 @@ def ceasar(original_text, shift_amount, direction):
                 new_index = (original_index + shift_amount) % 26
             else:
                 new_index = (original_index - shift_amount) % 26
-            encrypted_text += alphabet[new_index]
+            ceasar_text += alphabet[new_index]
         else:
-            encrypted_text += each_letter
-    print(encrypted_text)
+            ceasar_text += each_letter
+    print(f"The {'encrypted' if direction == 'encode' else 'decrypted'} massage is: {ceasar_text}")
 
 
 def start_caesar():
