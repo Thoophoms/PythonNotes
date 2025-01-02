@@ -1,6 +1,6 @@
-from art import art
+from art import logo
 
-print(art)
+print(logo)
 print("Welcome to the Secret Auction program")
 
 end = False
