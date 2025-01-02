@@ -48,3 +48,21 @@ for key1 in travel_log:
 # output
 # Thailand
 # USA
+
+# Todo: Nested List
+nested_list = ["a", "b", ["c", "d"]]
+
+# print the entire list
+print(nested_list)
+
+# print item index 0 from the list
+print(nested_list[0])
+
+# Todo: print "d" from the nested_list
+print(nested_list[2][1])
+
+# Todo: Change the dictionary name
+# Change capitals to capital_cities
+print(capitals)
+capital_cities = capitals
+print(capital_cities)
