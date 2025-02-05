@@ -2,4 +2,4 @@
 def format_name(first, last):
     print(first, last)
 
-format_name("Trisha", "Sup ")
+format_name("Trisha", "Sup")
