@@ -31,13 +31,14 @@ def start_blackjack():
             total = 0
             for card in whose_cards:
                 if card == "A":
-                    total+= 11
+                    total += 11
                 elif card == "J" or card == "Q" or card == "K":
                     total += 10
                 else:
                     total += card
-            if "A" in whose_cards and total > 21:
-                total -= 10
+                    if "A" in whose_cards and total > 21:
+                        total -= 10
+
             return total
 
 
@@ -66,12 +67,7 @@ def start_blackjack():
             pick_the_card(num_card=1, add_to=computer_card)
             # print(f"Computer's card: {computer_card}")
             computer_total_result = check_card(whose_cards=computer_card)
-            if computer_total_result > 21:
-                print("You win!")
-                another_play = again_and_again()
-                if another_play == 'n':
-                    still_play = False
-            # print(computer_total_result)
+
 
         # user's part
         pick_the_card(num_card=2, add_to=user_card)
@@ -85,6 +81,12 @@ def start_blackjack():
             # print(f"Your Card: {user_card}")
             user_total_result = check_card(whose_cards=user_card)
             # print(user_total_result)
+            if computer_total_result > 21:
+                print("You win!")
+                another_play = again_and_again()
+                if another_play == 'n':
+                    still_play = False
+            # print(computer_total_result)
 
             if user_total_result > 21:
                 print(f"Your final hands: {user_card}\nYou lose!")
