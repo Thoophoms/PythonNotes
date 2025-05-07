@@ -1,0 +1,25 @@
+# money penny (1 cent = 0.01), Dime (10 cent = 0.10), Nickel (5 cent = 0.05), Quarter (25 cent = 0.25)
+Requirement 1: Report
+    -   What would you like? (espresso/latte/cappuccino): report
+        -   Water: 300ml
+        -   Milk:   200ml
+        -   Coffee: 100g
+        -   Money:  $0
+
+Requirement 2: Check resources sufficient
+    - Sorry there is not enough {resources}
+
+
+Requirement 3: Customer orders
+    -   What would you like? (espresso/latte/cappuccino): latte
+    -   Please insert coins.
+    -   How many quarters?:     12
+    -   How many dimes?:
+    -   How many nickles?:
+    -   How many pennies?:
+    -   Here is $x.xx in change.
+    -   Sorry, that's not enough money. Money refunded.
+    -   Here is the {order} enjoy!
+
+Requirement 4: Add resources
+Requirement 5: Turn off the machine
